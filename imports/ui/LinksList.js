@@ -25,9 +25,11 @@ export default class LinksList extends React.Component {
   renderLinksListItems() {
     return this.state.links.map((link) => {
       return (
-        <ul>
-          <li key={link._id}>{link.url}</li>
-        </ul>
+        <div>
+          <ul>
+            <li key={link._id}>{link.url}</li>
+          </ul>
+        </div> 
       );
     });
   }
