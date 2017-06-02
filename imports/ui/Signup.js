@@ -21,13 +21,7 @@ export default class Signup extends React.Component {
       return this.setState({ error: 'Hey, your password must be more than 8 characters long.'});
     }
 
-    Accounts.createUser({email, password}, (err) => {
-      if (err) {
-        this.setState({error: err.reason});
-      } else {
-        this.setState({error: ''});
-      }
-    });
+    Accounts.createUser({email, password});
 
     // this.setState({
     //   error: 'Something went horribly wrong.'
