@@ -59,8 +59,6 @@ Meteor.methods({
   },
 
     'links.trackVisit'(_id) {
-      let moment = moment();
-
       new SimpleSchema ({
         _id: {
           type: String,
@@ -75,6 +73,6 @@ Meteor.methods({
         $inc: {
           visitedCount: 1
         }
-      })
+      });
     }
 });
