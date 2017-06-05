@@ -1,6 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import { Mongo } from 'meteor/mongo';
 import SimpleSchema from 'simpl-schema';
+import moment from 'moment';
 
 export const Links = new Mongo.Collection('links');
 
@@ -58,6 +59,8 @@ Meteor.methods({
   },
 
     'links.trackVisit'(_id) {
+      let moment = moment();
+
       new SimpleSchema ({
         _id: {
           type: String,
