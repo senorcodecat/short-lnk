@@ -15,6 +15,14 @@
   text-decoration: none;
 }
 
+.button--header {
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  text-decoration: underline;
+  font-weight: 200;
+}
+
 .button--pill {
   background-color: transparent;
   border: 1px solid $button-pill-color;
