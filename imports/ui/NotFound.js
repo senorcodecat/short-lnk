@@ -1,11 +1,17 @@
-import { Meteor } from 'meteor/meteor';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { Link } from 'react-router';
+
 
 export default class NotFound extends React.Component {
   render () {
     return (
-      <p>NotFound component here</p>
+      <div className="boxed-view">
+        <div className="boxed-view__box">
+                <h1>Page Not Found</h1>
+                <p>Hmmm, we're unable to find that page.</p>
+                <Link to="/" className="button button--link">HEAD HOME</Link>
+        </div>
+      </div>
     )
   }
 }

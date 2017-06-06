@@ -9,7 +9,7 @@ const PrivateHeader = (props) => {
   return (
     <div>
       <h1>{props.title}</h1>
-      <button onClick={() => Accounts.logout()}>Logout</button>
+      <button onClick={() => Accounts.logout()} className='button'>Logout</button>
     </div>
   )
 };
