@@ -39,7 +39,7 @@ export default class Login extends React.Component {
 
           {this.state.error ? <p>{this.state.error}</p> : undefined}
 
-          <Link to='/signup'>Don't have an account?</Link>
+          <Link to='/signup'>Need an account?</Link>
         </div>
       </div>
     );
